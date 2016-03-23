@@ -1,10 +1,10 @@
 package:
     name: gridutils
-    version: 1.01.0
+    version: 1.0
 
 source:
     git_url: https://github.com/sakov/gridutils-c.git
-    git_tag: master  # upstream does not create releases :-(
+    git_tag: v1.0
 
 build:
     number: 0

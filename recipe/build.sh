@@ -9,9 +9,11 @@ pushd gridutils
 ./configure --prefix=$PREFIX
 
 make
+
 pushd test
 make
 popd
+
 make install
 
 popd
