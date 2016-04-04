@@ -73,6 +73,11 @@ Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gridutils-feedstock.svg
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/gridutils-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gridutils-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gridutils-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gridutils-feedstock/branch/master)
 
+Current release info
+====================
+Version: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gridutils/badges/version.svg)](https://anaconda.org/conda-forge/gridutils)
+Downloads: [![Anaconda-Server Badge](https://anaconda.org/conda-forge/gridutils/badges/downloads.svg)](https://anaconda.org/conda-forge/gridutils)
+
 
 Updating gridutils-feedstock
 ============================
