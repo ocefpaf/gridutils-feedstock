@@ -5,7 +5,7 @@ Home: https://github.com/sakov/gridutils-c
 
 Package license: Simplified BSD
 
-Feedstock license: BSD
+Feedstock license: BSD 3-Clause
 
 Summary: C library functions and command line utilities for working with curvilinear grids.
 
@@ -69,6 +69,7 @@ Terminology
 
 Current build status
 ====================
+
 Linux: [![Circle CI](https://circleci.com/gh/conda-forge/gridutils-feedstock.svg?style=svg)](https://circleci.com/gh/conda-forge/gridutils-feedstock)
 OSX: [![TravisCI](https://travis-ci.org/conda-forge/gridutils-feedstock.svg?branch=master)](https://travis-ci.org/conda-forge/gridutils-feedstock) 
 Windows: [![AppVeyor](https://ci.appveyor.com/api/projects/status/github/conda-forge/gridutils-feedstock?svg=True)](https://ci.appveyor.com/project/conda-forge/gridutils-feedstock/branch/master)
