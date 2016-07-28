@@ -1,13 +1,16 @@
+{% set version = "1.0" %}
+
 package:
     name: gridutils
-    version: 1.0
+    version: {{ version }}
 
 source:
-    git_url: https://github.com/sakov/gridutils-c.git
-    git_tag: v1.0
+    fn: v{{ version }}.tar.gz
+    url: https://github.com/sakov/gridutils-c/archive/v{{ version }}.tar.gz
+    sha256: 358e93d2e3431d9e2d4c0574d25d97dd26585204e1e8407e817429f40ebf406e
 
 build:
-    number: 0
+    number: 1
     skip: True  # [win]
 
 requirements:
@@ -17,16 +20,16 @@ requirements:
     run:
         - nn
         - csa
-        - libgcc
 
 test:
     commands:
         - gridbathy -h
+        - conda inspect linkages -n _test csa  # [not win]
 
 about:
     home: https://github.com/sakov/gridutils-c
-    license: Simplified BSD
-    summary: C library functions and command line utilities for working with curvilinear grids.
+    license: BSD 2-Clause
+    summary: 'C library functions and command line utilities for working with curvilinear grids.'
 
 extra:
     recipe-maintainers:
