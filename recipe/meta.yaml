@@ -11,11 +11,12 @@ source:
 
 build:
   number: 2
-  skip: True  # [win]
 
 requirements:
   build:
     - toolchain
+    - posix  # [win]
+    - m2w64-toolchain  # [win]
     - nn
     - csa
   run:
@@ -24,13 +25,29 @@ requirements:
 
 test:
   commands:
-    - gridbathy -h
+    # *nix
+    - getbounds -h  # [not win]
+    - getnodes -h  # [not win]
+    - gridbathy -h  # [not win]
+    - insertgrid -h  # [not win]
+    - setbathy -h  # [not win]
+    - subgrid -h  # [not win]
+    - xyij -h  # [not win]
+    # win
+    - getbound.exe -h  # [win]
+    - getnodes.exe -h  # [win]
+    - gridbathy.exe -h  # [win]
+    - insertgrid.exe -h  # [win]
+    - setbathy.exe -h  # [win]
+    - subgrid.exe -h  # [win]
+    - xyij.exe -h  # [win]
     - conda inspect linkages -p $PREFIX gridutils  # [not win]
     - conda inspect objects -p $PREFIX gridutils  # [osx]
 
 about:
   home: https://github.com/sakov/gridutils-c
   license: BSD 2-Clause
+  license_file: LICENSE
   summary: 'C library functions and command line utilities for working with curvilinear grids.'
 
 extra:
