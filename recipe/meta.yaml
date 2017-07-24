@@ -26,13 +26,13 @@ requirements:
 test:
   commands:
     # *nix
-    - getbounds -h  # [not win]
+    - getbound -h  # [not win]
     - getnodes -h  # [not win]
     - gridbathy -h  # [not win]
     - insertgrid -h  # [not win]
     - setbathy -h  # [not win]
     - subgrid -h  # [not win]
-    - xyij -h  # [not win]
+    - xy2ij -h  # [not win]
     # win
     - getbound.exe -h  # [win]
     - getnodes.exe -h  # [win]
@@ -40,7 +40,7 @@ test:
     - insertgrid.exe -h  # [win]
     - setbathy.exe -h  # [win]
     - subgrid.exe -h  # [win]
-    - xyij.exe -h  # [win]
+    - xy2ij.exe -h  # [win]
     - conda inspect linkages -p $PREFIX gridutils  # [not win]
     - conda inspect objects -p $PREFIX gridutils  # [osx]
 
